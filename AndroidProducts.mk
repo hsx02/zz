@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2021 The xdroidsp
+# Copyright (C) 2021 The Komodo-OS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xdroid_pine.mk
+    $(LOCAL_DIR)/komodo_pine.mk
 
 COMMON_LUNCH_CHOICES := \
-    xdroid_pine-user \
-    xdroid_pine-userdebug \
-    xdroid_pine-eng
+    komodo_pine-user \
+    komodo_pine-userdebug \
+    komodo_pine-eng

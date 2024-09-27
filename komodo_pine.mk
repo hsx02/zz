@@ -9,20 +9,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-# Inherit some common xdroidsp stuff.
-$(call inherit-product, vendor/xdroid/config/common.mk)
-XDROID_BOOT := 720
-XDROID_MAINTAINER := hsxzerotwo
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-TARGET_SUPPORTS_QUICK_TAP := false
+# Inherit some common KomodoOS stuff.
+$(call inherit-product, vendor/komodo/config/common_full_phone.mk)
+
 
 # Inherit from pine device
 $(call inherit-product, device/xiaomi/pine/device.mk)
 
+# bootanimation_res
+TARGET_BOOT_ANIMATION_RES := 720
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := pine
-PRODUCT_NAME := xdroid_pine
+PRODUCT_NAME := komodo_pine
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 7A
